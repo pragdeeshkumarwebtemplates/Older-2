@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #454545;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav-section
+{
+    display: flex;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 20px;
+    position: fixed;
+}
+.nav-section .Dlist
+{
+    flex: 1;
+    text-align: right;
+}
+.nav-section .Dlist li
+{
+    display: inline;
+    margin: 0 30px;
+
+}
+a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+.logo
+{
+    color: #ffffff;
+    font-size: 2em;
+}
+li
+{
+    list-style: none;
+}
+.Mlist
+{
+    display: none;
+}
+.container{
+    width: 70%;
+    height: 700px;
+    background-color: none;
+    margin: 0 auto;
+}
+.container h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: none;
+    transform: translate(-50%,-50%);
+    font-size: 5em;
+    color: #f1f1f1;
+}
+.container p{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    background-color: none;
+    transform: translate(-50%,-50%);
+    font-size: 1em;
+    color: #f1f1f1;
+}
+
+.ac h1{
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    background-color: none;
+    transform: translate(-50%,-50%);
+    font-size: 3em;
+    color: #f1f1f1;
+    background: none;
+}
+.ac p{
+    position: absolute;
+    top: 145%;
+    left: 50%;
+    background-color: none;
+    transform: translate(-50%,-50%);
+    font-size: 1em;
+    color: #f1f1f1;
+    background: none;
+}
+
+.foot{
+    background-color: #000;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 300%;
+}
+.foot h1{
+    position: absolute;
+    color: #f1f1f1;
+    top: 25%;
+    text-align: center;
+    background: none;
+    left: 35%;
+}
+@media only screen and (max-width: 800px)
+{
+    .Dlist
+    {
+        display: none;
+    }
+    .logo
+    {
+        display: none;
+    }
+    .Mlist
+    {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        width: 100%;
+        z-index: 1000;
+    }
+    .Mlist li a
+    {
+        font-size: 30px;
+    }
+    .container h1
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: none;
+        transform: translate(-50%,-50%);
+        font-size: 2em;
+        color: #f1f1f1;
+        order: 1;
+    }
+    .container p{
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        background-color: none;
+        transform: translate(-50%,-50%);
+        font-size: 1em;
+        color: #f1f1f1;
+        text-align: left;
+    }
+    .ac h1{
+        font-size: 2em;
+    }
+    .ac p{
+        font-size: x-small;
+    }
+    .foot{
+        display: none;
+    }
+    .cont{
+        margin-bottom: 100%;
+    }
+    .btn{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+    }
+}
